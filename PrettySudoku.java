@@ -21,12 +21,35 @@ public class PrettySudoku
 
 	public static void prettyPrintSudoku (int[][] array)
 	{
-		System.out.print("[");
-		for (int i = 0; i < array.length; i++);
+		for (int i = 0; i < array.length; i++)
 		{
-			System.out.print((i == 0 ? "" : ", ") + array[i]);
+			//System.out.print("[");
+
+			for (int j = 0; j < array[i].length; j++)
+			{
+				System.out.print((j == 0 ? "" : " ") + array[i][j]);
+
+				
+			}
+
+			//System.out.print("]");
+			System.out.print("\n");
+
+			if (i%3 == 0 && i != 0)
+			{
+				System.out.print("");
+
+				for (int t = 0; t < 9; t++)
+				{
+					if (t%3 == 0)
+						System.out.print(" ");
+
+					if (array[i][t] == 0)
+						System.out.print("hullu ");
+				}
+			}
 		}
-		System.out.print("]");
 
 	}
+
 }
