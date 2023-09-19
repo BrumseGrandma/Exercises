@@ -5,10 +5,10 @@ public class Sum
 		int stable = 38;
 		int field = 450;
 
-		System.out.println(main(stable, field));
+		System.out.println(sum(stable, field));
 	}
 
-	public static int main (int num1, int num2)
+	public static int sum (int num1, int num2)
 	{
 		return (num1 + num2);
 	}
