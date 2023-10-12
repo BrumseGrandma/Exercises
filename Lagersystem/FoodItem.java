@@ -10,6 +10,12 @@ class FoodItem extends Item
 		this.Expires = expires;
 	}
 
+	FoodItem (String name, int price, Date expires)
+	{
+		super(name, price);
+		this.Expires = expires;
+	}
+	
 	public Date getExpires ()
 	{
 		return Expires;
@@ -24,7 +30,7 @@ class FoodItem extends Item
 	}
 
 	//Delopgave 2
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		FoodItem[] items = new FoodItem[10];
 
